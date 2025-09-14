@@ -1,0 +1,160 @@
+/* GLOBAL */
+
+body{
+    margin: auto;
+    background-color: rgb(236, 236, 236);
+}
+
+/* LOGIN / SIGNUP */
+
+.container{
+    width: 25%;
+    height: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    border-radius: 8px;
+    text-align: center;
+     background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+}
+
+.container h1{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+}
+
+.intercontainer{
+    padding: 25px;
+}
+input{
+    border-radius: 8px;
+    width: 85%;
+    height: 45px;
+    margin: 5px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 45px;
+    width: 85%;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 22px;
+    transition: 0.3s;
+    background-color: white;
+}
+
+button:hover{
+        background: rgb(208, 208, 208);
+    transform: scale(1.02);
+}
+
+.alt{
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links{
+    margin-top: 25px;
+}
+
+.links a{
+ color: rgb(40, 49, 163);
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+ font-size: 22px;
+}
+
+.links p{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+ /* Mobile fix */
+
+ @media (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: auto;
+        margin-top: 100px;
+        padding: 20px;
+    }
+
+    .intercontainer {
+        padding: 20px;
+    }
+
+    input,
+    button {
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+/* ACCOUNT PAGE */
+
+.left{
+    background-color: rgb(40, 40, 40);
+    width: 25%;
+    height: 100vh;
+
+    display: inline-block;
+}
+
+.main{
+    background-color: rgb(45, 45, 45);
+    display: inline-block;
+    width: 75%;
+    height: 100vh;
+}
+
+.buttoncontainer{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#pfp{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: black;
+    border-width: 10%;
+    margin-top: 50px;
+}
+
+.buttoncontainer .links{
+    margin-top: 50px;
+}
+
+.buttoncontainer .links a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 100px;
+}
+
+.logout{
+    margin-top: 50px;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+    .left, .main {
+        width: 100%;
+        float: none;
+        display: block;
+        height: auto;
+    }
+
+    .buttoncontainer .links a {
+        padding: 20px;
+    }
+}
